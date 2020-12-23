@@ -1,4 +1,4 @@
-package model;
+package dynamicproxy.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

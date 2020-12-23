@@ -1,7 +1,7 @@
-package proxy;
+package dynamicproxy.service;
 
-import cached.Cached;
-import model.User;
+import dynamicproxy.cached.Cached;
+import dynamicproxy.model.User;
 
 import java.util.ArrayList;
 

@@ -1,6 +1,5 @@
-package cached;
+package dynamicproxy.cached;
 
-import java.io.File;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

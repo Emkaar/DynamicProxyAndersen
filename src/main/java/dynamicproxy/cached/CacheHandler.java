@@ -1,27 +1,28 @@
-package proxy;
+package dynamicproxy.cached;
 
-import cached.Cached;
+import dynamicproxy.cached.Cached;
+import dynamicproxy.service.Service;
 
 import java.io.*;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-public class CacheProxy implements InvocationHandler {
+public class CacheHandler implements InvocationHandler {
     private Service service;
     private File path = new File("");
     private HashMap<String, Object> jvmCache = new HashMap<>();
 
-    public CacheProxy(Service service) {
+    public CacheHandler(Service service) {
         this.service = service;
     }
 
-    public CacheProxy(Service service, File path) {
+    public CacheHandler(Service service, File path) {
         this.service = service;
         this.path = path;
     }
 
-    public CacheProxy(Service service, String path) {
+    public CacheHandler(Service service, String path) {
         this.service = service;
         this.path = new File(path);
     }
