@@ -1,4 +1,4 @@
-package standartproxy;
+package dynamicproxy.cached;
 
 import dynamicproxy.cached.CacheHandler;
 import dynamicproxy.service.Service;

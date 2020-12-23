@@ -14,10 +14,10 @@ public class HardWorkService implements Service{
         resultList.add("lalala");
         return resultList;
     }
-
+    @Cached
     @Override
     public String doEasyWork() {
-        return null;
+        return "do easy work!";
     }
 
     @Override
@@ -25,6 +25,7 @@ public class HardWorkService implements Service{
         System.out.println("Kokos");
     }
 
+    @Cached
     @Override
     public User getUser() {
         return new User("Ivan", 22);
