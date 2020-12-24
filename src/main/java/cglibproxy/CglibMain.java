@@ -9,5 +9,6 @@ public class CglibMain {
         cglibProxy.doHardWork();
         System.out.println(cglibProxy.doEasyWork());
         cglibProxy.getUser();
+        cglibProxy.testMethod();
     }
 }
